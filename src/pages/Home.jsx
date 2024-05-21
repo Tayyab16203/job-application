@@ -1,111 +1,111 @@
-import banner_home from "./assets/homeSection1pic/banner_home.jpg"
-import search_icon from "./assets/homeSection1pic/search_icon.png"
-import location_icon from "./assets/homeSection1pic/location_icon.png"
-import job_pic from "./assets/homeSection1pic/job_pic.svg"
-import company_logo from "./assets/homeSection1pic/company_logo.svg"
-import employee_logo from "./assets/homeSection1pic/employee_logo.svg"
-import pic1 from "./assets/homeSection3pic/pic1.webp"
-import map_pin1 from "./assets/homeSection3pic/map-pin1.svg"
-import dollar_sign3 from "./assets/homeSection3pic/dollar-sign3.svg"
-import clock1 from "./assets/homeSection3pic/clock1.svg"
-import blog_img1 from "./assets/homeSection5pic/blog-img-1.webp"
-import blog_img2 from "./assets/homeSection5pic/blog-img-2.webp"
-import blog_img3 from "./assets/homeSection5pic/blog-img-3.webp"
-import CATEGORIES from "../categories"
-import Category from "../pages/category"
+import banner_home from "/homeSection1pic/banner_home.jpg"
+import search_icon from "/homeSection1pic/search_icon.png"
+import location_icon from "/homeSection1pic/location_icon.png"
+import job_pic from "/homeSection1pic/job_pic.svg"
+import company_logo from "/homeSection1pic/company_logo.svg"
+import employee_logo from "/homeSection1pic/employee_logo.svg"
+import pic1 from "/homeSection3pic/pic1.webp"
+import map_pin1 from "/homeSection3pic/map-pin1.svg"
+import dollar_sign3 from "/homeSection3pic/dollar-sign3.svg"
+import clock1 from "/homeSection3pic/clock1.svg"
+import blog_img1 from "/homeSection5pic/blog-img-1.webp"
+import blog_img2 from "/homeSection5pic/blog-img-2.webp"
+import blog_img3 from "/homeSection5pic/blog-img-3.webp"
+import CATEGORIES from "./catergory/categories"
+import Category from "./catergory/category"
 
 const Home = () => {
   return (
     <>
-    <main>
+      <main>
         {/* 1st section */}
-        <section className="py-16 md:py-20 lg:py-24 relative bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${banner_home})`}}>
-            {/* background color */}
-            <div className="absolute w-full h-full top-0 left-0 bg-[rgba(0,124,50,0.7)] z-2"></div>
-            <div className="px-4 py-2 xl:max-w-[1380px] mx-auto font-sans">
-              <div className="w-10/12 m-auto z-4 relative">
-                {/* text container */}
-                <div className="text-center">
-                  <h1 className="text-white text-center text-[45px] xl:text-[64px] font-bold leading-none mb-3">
-                    Find Your Dream Job <br className="hidden xl:inline"/> With Brand Name
-                  </h1>
-                  <p className="text-lg text-white font-normal leading-8">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br className="hidden xl:inline"/> Possimus id ea rem obcaecati unde esse dignissimos.
-                  </p>
+        <section className="py-16 md:py-20 lg:py-24 relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${banner_home})` }}>
+          {/* background color */}
+          <div className="absolute w-full h-full top-0 left-0 bg-[rgba(0,124,50,0.7)] z-2"></div>
+          <div className="px-4 py-2 xl:max-w-[1380px] mx-auto font-sans">
+            <div className="w-10/12 m-auto z-4 relative">
+              {/* text container */}
+              <div className="text-center">
+                <h1 className="text-white text-center text-[45px] xl:text-[64px] font-bold leading-none mb-3">
+                  Find Your Dream Job <br className="hidden xl:inline" /> With Brand Name
+                </h1>
+                <p className="text-lg text-white font-normal leading-8">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br className="hidden xl:inline" /> Possimus id ea rem obcaecati unde esse dignissimos.
+                </p>
+              </div>
+              {/* form */}
+              <div className="search-wrapper my-10 p-2 rounded-2xl bg-[rgba(121,184,151,0.5)]">
+                <form>
+                  <div className="bg-white overflow-hidden rounded-xl md:grid gap-7 lg:gap-10 grid-cols-8 xl:grid-cols-7 items-center">
+                    <div className="col-span-2 px-4 md:px-0 md:pl-4 border-r-2 border-gray h-full flex items-center">
+                      <input type="text" className="w-full block !pr-3 py-4 border-b-2 border-gray md:border-0 md-py-4 focus:outline-none bg-left bg-no-repeat px-8 placeholder:text-[rgb(102,115,127)]" placeholder="Job Title" name="jobTitle" style={{ backgroundImage: `url(${search_icon})` }} />
+                    </div>
+                    <div className="col-span-2 px-4 md:px-0 md:pl-4 border-r-2 border-gray h-full flex items-center">
+                      <input type="text" className="w-full block !pr-3 py-4 border-b-2 border-gray md:border-0 md-py-4 focus:outline-none bg-left bg-no-repeat px-8 placeholder:text-[rgb(102,115,127)]" placeholder="Location" name="location" style={{ backgroundImage: `url(${location_icon})` }} />
+                    </div>
+                    <div className="col-span-2 px-4 md:!px-0">
+                      <select className="border-0 focus:shadow-none py-3 select2-init text-xxs text-[rgb(102,115,127)] font-normal focus-visible:white focus:outline-none w-full" aria-label="Default select example" name="category">
+                        <option value>Select Categories</option>
+                        <option value="Bank 1">Bank 1</option>
+                        <option value="Commercial/Supply">Commercial/supply</option>
+                        <option value="Construction.Facilities">Construction.facilities</option>
+                        <option value="Design/Creative">Design/creative</option>
+                        <option value="Education Training">Education training</option>
+                        <option value="Engineer/Architects">Engineer/architects</option>
+                        <option value="Hospitality/Travel">Hospitality/travel</option>
+                        <option value="Electrition/Repair">Electrition/repair</option>
+                        <option value="Marketing/Sales">Marketing/sales</option>
+                        <option value="It/Telecommunication">It/telecommunication</option>
+                        <option value="Accounting/Finance">Accounting/finance</option>
+                        <option value="MERN">Mern</option>
+                      </select>
+                    </div>
+                    <div className="col-span-2 btn-banner xl:col-span-1 px-4 md:!px-0 py-4 md:!py-2 text-center grid md:justify-end lg:text-right mr-4">
+                      <button type="submit" className="md:w-28 block bg-green-600 text-white px-4 py-3 text-md font-medium rounded-md outline-none hover:bg-black">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              {/* job availible details */}
+              <div className="grid gap-8 xl:gap-12 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1">
+                <div className="bg-white rounded-lg text-center p-8 duration-300 transition hover:bg-opacity-90">
+                  <div className="flex mb-6 justify-center">
+                    <div className="mb-[-7px]">
+                      <span className="border-box inline-block  bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                        <img src={job_pic} alt="img" />
+                      </span>
+                    </div>
+                  </div>
+                  <h1 className="text-black text-[34px] font-bold leading-none mb-2">23 +</h1>
+                  <p className="text-xl text-[rgb(102,115,127)] font-medium">JOB AVAILIBLE</p>
                 </div>
-                {/* form */}
-                <div className="search-wrapper my-10 p-2 rounded-2xl bg-[rgba(121,184,151,0.5)]">
-                  <form>
-                    <div className="bg-white overflow-hidden rounded-xl md:grid gap-7 lg:gap-10 grid-cols-8 xl:grid-cols-7 items-center">
-                      <div className="col-span-2 px-4 md:px-0 md:pl-4 border-r-2 border-gray h-full flex items-center">
-                        <input type="text" className="w-full block !pr-3 py-4 border-b-2 border-gray md:border-0 md-py-4 focus:outline-none bg-left bg-no-repeat px-8 placeholder:text-[rgb(102,115,127)]" placeholder="Job Title" name="jobTitle" style={{backgroundImage : `url(${search_icon})`}}/>
-                      </div>
-                      <div className="col-span-2 px-4 md:px-0 md:pl-4 border-r-2 border-gray h-full flex items-center">
-                        <input type="text" className="w-full block !pr-3 py-4 border-b-2 border-gray md:border-0 md-py-4 focus:outline-none bg-left bg-no-repeat px-8 placeholder:text-[rgb(102,115,127)]" placeholder="Location" name="location" style={{backgroundImage : `url(${location_icon})`}}/>
-                      </div>
-                      <div className="col-span-2 px-4 md:!px-0">
-                        <select className="border-0 focus:shadow-none py-3 select2-init text-xxs text-[rgb(102,115,127)] font-normal focus-visible:white focus:outline-none w-full" aria-label="Default select example" name="category">
-                          <option value>Select Categories</option>
-                          <option value="Bank 1">Bank 1</option>
-                          <option value="Commercial/Supply">Commercial/supply</option>
-                          <option value="Construction.Facilities">Construction.facilities</option>
-                          <option value="Design/Creative">Design/creative</option>
-                          <option value="Education Training">Education training</option>
-                          <option value="Engineer/Architects">Engineer/architects</option>
-                          <option value="Hospitality/Travel">Hospitality/travel</option>
-                          <option value="Electrition/Repair">Electrition/repair</option>
-                          <option value="Marketing/Sales">Marketing/sales</option>
-                          <option value="It/Telecommunication">It/telecommunication</option>
-                          <option value="Accounting/Finance">Accounting/finance</option>
-                          <option value="MERN">Mern</option>
-                        </select>
-                      </div>
-                      <div className="col-span-2 btn-banner xl:col-span-1 px-4 md:!px-0 py-4 md:!py-2 text-center grid md:justify-end lg:text-right mr-4">
-                        <button type="submit" className="md:w-28 block bg-green-600 text-white px-4 py-3 text-md font-medium rounded-md outline-none hover:bg-black">
-                          Search
-                        </button>
-                      </div>
+                <div className="bg-white rounded-lg text-center p-8 duration-300 transition hover:bg-opacity-90">
+                  <div className="flex mb-6 justify-center">
+                    <div className="mb-[-7px]">
+                      <span className="border-box inline-block  bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                        <img src={company_logo} alt="img" />
+                      </span>
                     </div>
-                  </form>
+                  </div>
+                  <h1 className="text-black text-[34px] font-bold leading-none mb-2">6 +</h1>
+                  <p className="text-xl text-[rgb(102,115,127)] font-medium">COMPANY</p>
                 </div>
-                {/* job availible details */}
-                <div className="grid gap-8 xl:gap-12 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1">
-                  <div className="bg-white rounded-lg text-center p-8 duration-300 transition hover:bg-opacity-90">
-                    <div className="flex mb-6 justify-center">
-                      <div className="mb-[-7px]">
-                        <span className="border-box inline-block  bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                          <img src={job_pic} alt="img" />
-                        </span>
-                      </div>
+                <div className="bg-white rounded-lg text-center p-8 duration-300 transition hover:bg-opacity-90">
+                  <div className="flex mb-6 justify-center">
+                    <div className="mb-[-7px]">
+                      <span className="border-box inline-block  bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                        <img src={employee_logo} alt="img" />
+                      </span>
                     </div>
-                    <h1 className="text-black text-[34px] font-bold leading-none mb-2">23 +</h1>
-                    <p className="text-xl text-[rgb(102,115,127)] font-medium">JOB AVAILIBLE</p>
                   </div>
-                  <div className="bg-white rounded-lg text-center p-8 duration-300 transition hover:bg-opacity-90">
-                    <div className="flex mb-6 justify-center">
-                      <div className="mb-[-7px]">
-                        <span className="border-box inline-block  bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                          <img src={company_logo} alt="img" />
-                        </span>
-                      </div>
-                    </div>
-                    <h1 className="text-black text-[34px] font-bold leading-none mb-2">6 +</h1>
-                    <p className="text-xl text-[rgb(102,115,127)] font-medium">COMPANY</p>
-                  </div>
-                  <div className="bg-white rounded-lg text-center p-8 duration-300 transition hover:bg-opacity-90">
-                    <div className="flex mb-6 justify-center">
-                      <div className="mb-[-7px]">
-                        <span className="border-box inline-block  bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                          <img src={employee_logo} alt="img" />
-                        </span>
-                      </div>
-                    </div>
-                    <h1 className="text-black text-[34px] font-bold leading-none mb-2">3 +</h1>
-                    <p className="text-xl text-[rgb(102,115,127)] font-medium">AVAILIBLE RESUMES</p>
-                  </div>
+                  <h1 className="text-black text-[34px] font-bold leading-none mb-2">3 +</h1>
+                  <p className="text-xl text-[rgb(102,115,127)] font-medium">AVAILIBLE RESUMES</p>
                 </div>
               </div>
             </div>
+          </div>
         </section>
         {/* 2nd section */}
         <section className="py-16 md:py-20 lg:py-25 !bg-gray-100 font-sans">
@@ -117,9 +117,9 @@ const Home = () => {
             </div>
             {/* section main dev */}
             <div className="grid gap-4 xl:gap-5 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
-            {CATEGORIES.map((ct) => 
-              (<Category data={ct}/>)
-            )}
+              {CATEGORIES.map((ct) =>
+                (<Category data={ct} />)
+              )}
             </div>
             <div className="text-center mt-14"><a className="text-white text-[16px] font-medium transition-all bg-gray-800 cursor-pointer px-6 py-2.5 rounded-lg hover:bg-green-600">Browse All Category</a></div>
           </div>
@@ -165,28 +165,28 @@ const Home = () => {
                   </div>
                   {/* end text of section */}
                   <div className="px-2">
-                      <ul className="mb-4">
-                        <li className="mb-2">
-                          <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                            <div className="mb-[-7px]">
-                              <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                <img src={dollar_sign3} alt="dollar" />
-                              </span>
-                            </div>
-                            <p>15k - 35k Taka</p>
+                    <ul className="mb-4">
+                      <li className="mb-2">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={dollar_sign3} alt="dollar" />
+                            </span>
                           </div>
-                        </li>
-                        <li className="mb-0">
-                            <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                              <div className="mb-[-7px]">
-                                <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                  <img src={clock1} alt="clock1" />
-                                </span>
-                              </div>
-                              <p>2 years ago</p>
-                            </div>
-                        </li>
-                      </ul>
+                          <p>15k - 35k Taka</p>
+                        </div>
+                      </li>
+                      <li className="mb-0">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={clock1} alt="clock1" />
+                            </span>
+                          </div>
+                          <p>2 years ago</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   {/* Apply Button */}
                   <div>
@@ -225,28 +225,28 @@ const Home = () => {
                   </div>
                   {/* end text of section */}
                   <div className="px-2">
-                      <ul className="mb-4">
-                        <li className="mb-2">
-                          <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                            <div className="mb-[-7px]">
-                              <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                <img src={dollar_sign3} alt="dollar" />
-                              </span>
-                            </div>
-                            <p>15k - 35k Taka</p>
+                    <ul className="mb-4">
+                      <li className="mb-2">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={dollar_sign3} alt="dollar" />
+                            </span>
                           </div>
-                        </li>
-                        <li className="mb-0">
-                            <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                              <div className="mb-[-7px]">
-                                <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                  <img src={clock1} alt="clock1" />
-                                </span>
-                              </div>
-                              <p>2 years ago</p>
-                            </div>
-                        </li>
-                      </ul>
+                          <p>15k - 35k Taka</p>
+                        </div>
+                      </li>
+                      <li className="mb-0">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={clock1} alt="clock1" />
+                            </span>
+                          </div>
+                          <p>2 years ago</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   {/* Apply Button */}
                   <div>
@@ -285,28 +285,28 @@ const Home = () => {
                   </div>
                   {/* end text of section */}
                   <div className="px-2">
-                      <ul className="mb-4">
-                        <li className="mb-2">
-                          <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                            <div className="mb-[-7px]">
-                              <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                <img src={dollar_sign3} alt="dollar" />
-                              </span>
-                            </div>
-                            <p>15k - 35k Taka</p>
+                    <ul className="mb-4">
+                      <li className="mb-2">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={dollar_sign3} alt="dollar" />
+                            </span>
                           </div>
-                        </li>
-                        <li className="mb-0">
-                            <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                              <div className="mb-[-7px]">
-                                <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                  <img src={clock1} alt="clock1" />
-                                </span>
-                              </div>
-                              <p>2 years ago</p>
-                            </div>
-                        </li>
-                      </ul>
+                          <p>15k - 35k Taka</p>
+                        </div>
+                      </li>
+                      <li className="mb-0">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={clock1} alt="clock1" />
+                            </span>
+                          </div>
+                          <p>2 years ago</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   {/* Apply Button */}
                   <div>
@@ -345,28 +345,28 @@ const Home = () => {
                   </div>
                   {/* end text of section */}
                   <div className="px-2">
-                      <ul className="mb-4">
-                        <li className="mb-2">
-                          <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                            <div className="mb-[-7px]">
-                              <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                <img src={dollar_sign3} alt="dollar" />
-                              </span>
-                            </div>
-                            <p>15k - 35k Taka</p>
+                    <ul className="mb-4">
+                      <li className="mb-2">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={dollar_sign3} alt="dollar" />
+                            </span>
                           </div>
-                        </li>
-                        <li className="mb-0">
-                            <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                              <div className="mb-[-7px]">
-                                <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                  <img src={clock1} alt="clock1" />
-                                </span>
-                              </div>
-                              <p>2 years ago</p>
-                            </div>
-                        </li>
-                      </ul>
+                          <p>15k - 35k Taka</p>
+                        </div>
+                      </li>
+                      <li className="mb-0">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={clock1} alt="clock1" />
+                            </span>
+                          </div>
+                          <p>2 years ago</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   {/* Apply Button */}
                   <div>
@@ -405,28 +405,28 @@ const Home = () => {
                   </div>
                   {/* end text of section */}
                   <div className="px-2">
-                      <ul className="mb-4">
-                        <li className="mb-2">
-                          <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                            <div className="mb-[-7px]">
-                              <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                <img src={dollar_sign3} alt="dollar" />
-                              </span>
-                            </div>
-                            <p>15k - 35k Taka</p>
+                    <ul className="mb-4">
+                      <li className="mb-2">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={dollar_sign3} alt="dollar" />
+                            </span>
                           </div>
-                        </li>
-                        <li className="mb-0">
-                            <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                              <div className="mb-[-7px]">
-                                <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                  <img src={clock1} alt="clock1" />
-                                </span>
-                              </div>
-                              <p>2 years ago</p>
-                            </div>
-                        </li>
-                      </ul>
+                          <p>15k - 35k Taka</p>
+                        </div>
+                      </li>
+                      <li className="mb-0">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={clock1} alt="clock1" />
+                            </span>
+                          </div>
+                          <p>2 years ago</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   {/* Apply Button */}
                   <div>
@@ -465,28 +465,28 @@ const Home = () => {
                   </div>
                   {/* end text of section */}
                   <div className="px-2">
-                      <ul className="mb-4">
-                        <li className="mb-2">
-                          <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                            <div className="mb-[-7px]">
-                              <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                <img src={dollar_sign3} alt="dollar" />
-                              </span>
-                            </div>
-                            <p>15k - 35k Taka</p>
+                    <ul className="mb-4">
+                      <li className="mb-2">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={dollar_sign3} alt="dollar" />
+                            </span>
                           </div>
-                        </li>
-                        <li className="mb-0">
-                            <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                              <div className="mb-[-7px]">
-                                <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                  <img src={clock1} alt="clock1" />
-                                </span>
-                              </div>
-                              <p>2 years ago</p>
-                            </div>
-                        </li>
-                      </ul>
+                          <p>15k - 35k Taka</p>
+                        </div>
+                      </li>
+                      <li className="mb-0">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={clock1} alt="clock1" />
+                            </span>
+                          </div>
+                          <p>2 years ago</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   {/* Apply Button */}
                   <div>
@@ -525,28 +525,28 @@ const Home = () => {
                   </div>
                   {/* end text of section */}
                   <div className="px-2">
-                      <ul className="mb-4">
-                        <li className="mb-2">
-                          <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                            <div className="mb-[-7px]">
-                              <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                <img src={dollar_sign3} alt="dollar" />
-                              </span>
-                            </div>
-                            <p>15k - 35k Taka</p>
+                    <ul className="mb-4">
+                      <li className="mb-2">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={dollar_sign3} alt="dollar" />
+                            </span>
                           </div>
-                        </li>
-                        <li className="mb-0">
-                            <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                              <div className="mb-[-7px]">
-                                <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                  <img src={clock1} alt="clock1" />
-                                </span>
-                              </div>
-                              <p>2 years ago</p>
-                            </div>
-                        </li>
-                      </ul>
+                          <p>15k - 35k Taka</p>
+                        </div>
+                      </li>
+                      <li className="mb-0">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={clock1} alt="clock1" />
+                            </span>
+                          </div>
+                          <p>2 years ago</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   {/* Apply Button */}
                   <div>
@@ -585,28 +585,28 @@ const Home = () => {
                   </div>
                   {/* end text of section */}
                   <div className="px-2">
-                      <ul className="mb-4">
-                        <li className="mb-2">
-                          <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                            <div className="mb-[-7px]">
-                              <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                <img src={dollar_sign3} alt="dollar" />
-                              </span>
-                            </div>
-                            <p>15k - 35k Taka</p>
+                    <ul className="mb-4">
+                      <li className="mb-2">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={dollar_sign3} alt="dollar" />
+                            </span>
                           </div>
-                        </li>
-                        <li className="mb-0">
-                            <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
-                              <div className="mb-[-7px]">
-                                <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
-                                  <img src={clock1} alt="clock1" />
-                                </span>
-                              </div>
-                              <p>2 years ago</p>
-                            </div>
-                        </li>
-                      </ul>
+                          <p>15k - 35k Taka</p>
+                        </div>
+                      </li>
+                      <li className="mb-0">
+                        <div className="flex gap-3 items-center text-gray-600 text-[14px] font-normel">
+                          <div className="mb-[-7px]">
+                            <span className="border-box inline-block overflow-hidden bg-none opacity-1 border-0 m-0 p-0 relative max-w-[100%]">
+                              <img src={clock1} alt="clock1" />
+                            </span>
+                          </div>
+                          <p>2 years ago</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   {/* Apply Button */}
                   <div>
@@ -721,13 +721,13 @@ const Home = () => {
             </div>
             {/* Blog button */}
             <div className="text-center mt-14">
-              <a  className="text-white text-[16px] font-normal px-6 py-2.5 bg-gray-600 rounded-md hover:bg-green-600 transition-all " href="#">
+              <a className="text-white text-[16px] font-normal px-6 py-2.5 bg-gray-600 rounded-md hover:bg-green-600 transition-all " href="#">
                 See All Blog
               </a>
             </div>
           </div>
         </section>
-    </main>
+      </main>
     </>
   )
 }

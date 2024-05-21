@@ -1,12 +1,12 @@
-import back_pic from "./assets/findjobPagePic/back_pic.jpeg"
-import map_pin1 from "./assets/findjobPagePic/section2/map-pin1.svg"
-import doller_sign3 from "./assets/findjobPagePic/section2/dollar-sign3.svg"
-import clock1 from "./assets/findjobPagePic/section2/clock1.svg"
-import avatar_pic from "./assets/findjobPagePic/section2/avatar.webp"
-import customer1 from "./assets/findjobPagePic/section2/Customer1.webp"
-import customer2 from "./assets/findjobPagePic/section2/customer2.webp"
-import customer3  from "./assets/findjobPagePic/section2/customer3.png"
-import customer4 from "./assets/findjobPagePic/section2/Customer4.webp"
+import back_pic from "/findjobPagePic/back_pic.jpeg"
+import map_pin1 from "/findjobPagePic/section2/map-pin1.svg"
+import doller_sign3 from "/findjobPagePic/section2/dollar-sign3.svg"
+import clock1 from "/findjobPagePic/section2/clock1.svg"
+import avatar_pic from "/findjobPagePic/section2/avatar.webp"
+import customer1 from "/findjobPagePic/section2/Customer1.webp"
+import customer2 from "/findjobPagePic/section2/customer2.webp"
+import customer3  from "/findjobPagePic/section2/customer3.png"
+import customer4 from "/findjobPagePic/section2/Customer4.webp"
 const Find_Job = () => {
   return (
     <>

@@ -1,4 +1,4 @@
-import back_pic from "./assets/findjobPagePic/back_pic.jpeg"
+import back_pic from "/findjobPagePic/back_pic.jpeg"
 
 const Contact_Us = () => {
   return (

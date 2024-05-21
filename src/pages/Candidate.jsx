@@ -1,6 +1,6 @@
-import back_pic from "./assets/findjobPagePic/back_pic.jpeg"
-import pic5 from "./assets/candidatePage/section2/pic5.png"
-import map_pin1 from "./assets/candidatePage/section2/map-pin1.svg"
+import back_pic from "/findjobPagePic/back_pic.jpeg"
+import pic5 from "/candidatePage/section2/pic5.png"
+import map_pin1 from "/candidatePage/section2/map-pin1.svg"
 
 const Candidate = () => {
   return (

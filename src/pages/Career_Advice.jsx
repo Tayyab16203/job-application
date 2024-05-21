@@ -1,25 +1,25 @@
-import back_pic from "./assets/findjobPagePic/back_pic.jpeg"
-import blog_img1 from "./assets/homeSection5pic/blog-img-1.webp"
-import blog_img2 from "./assets/homeSection5pic/blog-img-2.webp"
-import blog_img3 from "./assets/homeSection5pic/blog-img-3.webp"
+import back_pic from "/findjobPagePic/back_pic.jpeg"
+import blog_img1 from "/homeSection5pic/blog-img-1.webp"
+import blog_img2 from "/homeSection5pic/blog-img-2.webp"
+import blog_img3 from "/homeSection5pic/blog-img-3.webp"
 
 const Career_Advice = () => {
   return (
     <>
-    <main>
+      <main>
         {/* section 1 */}
-        <section className="relative bg-cover bg-center bg-no-repeat font-sans" style={{backgroundImage: `url(${back_pic})`}}>
-            <div className="absolute w-full h-full top-0 left-0 bg-[rgba(0,124,50,0.7)] z-2">
+        <section className="relative bg-cover bg-center bg-no-repeat font-sans" style={{ backgroundImage: `url(${back_pic})` }}>
+          <div className="absolute w-full h-full top-0 left-0 bg-[rgba(0,124,50,0.7)] z-2">
+          </div>
+          <div className="py-16 md:p-16 xl:max-w-[1380px] mx-auto">
+            <div className="w-10/12 m-auto z-4 relative pt-10 pb-7">
+              <div className="text-center">
+                <h1 className="text-white text-[45px] xl:text-[64px] font-bold text-center leading-none mb-6 ">
+                  Career Advice
+                </h1>
+              </div>
             </div>
-            <div className="py-16 md:p-16 xl:max-w-[1380px] mx-auto">
-                <div className="w-10/12 m-auto z-4 relative pt-10 pb-7">
-                    <div className="text-center">
-                        <h1 className="text-white text-[45px] xl:text-[64px] font-bold text-center leading-none mb-6 ">
-                            Career Advice
-                        </h1>
-                    </div>
-                </div>
-            </div>
+          </div>
         </section>
         {/* 2nd section */}
         <section className="py-16 md:py-20 lg:py-24 font-sans ">
@@ -118,13 +118,13 @@ const Career_Advice = () => {
             </div>
             {/* Blog button */}
             <div className="text-center mt-14">
-              <a  className="text-white text-[16px] font-normal px-6 py-2.5 bg-gray-600 rounded-md hover:bg-green-600 transition-all " href="#">
+              <a className="text-white text-[16px] font-normal px-6 py-2.5 bg-gray-600 rounded-md hover:bg-green-600 transition-all " href="#">
                 See All Blog
               </a>
             </div>
           </div>
         </section>
-    </main>
+      </main>
     </>
   )
 }

@@ -1,6 +1,6 @@
-import map_pin from "./components/assets/Footer/map-pin5.svg"
-import callImg from "./components/assets/Footer/call.svg"
-import mailImg from "./components/assets/Footer/mail1.svg"
+import map_pin from "/Footer/map-pin5.svg"
+import callImg from "/Footer/call.svg"
+import mailImg from "/Footer/mail1.svg"
 const Footer = () => {
   return (
     <>
